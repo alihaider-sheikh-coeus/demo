@@ -1,2 +1,2 @@
 <?php
-echo "in action page";
+echo "in action form";

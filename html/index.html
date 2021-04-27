@@ -4,17 +4,32 @@
 
 <h2>Text input fields</h2>
 
-<form action="action.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label><br>
+<form action="action.php" method="post" autocomplete="on">
+
+    <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+
+        <label for="browser">Select Browser</label><br>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br>
+
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br>
+    </fieldset>
     <input type="submit" value="Submit">
 </form>
 
