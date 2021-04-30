@@ -1,0 +1,181 @@
+
+.topnav {
+    overflow: hidden;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 70%;
+    bottom: 0;
+    display: block;
+    justify-content: space-between;
+}
+
+.col-xs-10 {
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+.CommentBox {
+    width: 1100px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+}
+
+.column1 {
+    float: left;
+    width: 49.86%;
+    border: 1px solid black;
+    height: 500px;
+    display: table-cell;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.column2 {
+    float: right;
+    width: 49.91%;
+    height: 500px;
+    display: table-cell;
+    border: 1px solid black;
+}
+
+h5 {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.container {
+    width: 95%;
+}
+
+.container > div {
+    display: inline-block;
+    width: 120%; /* of wrapper width */
+    margin-top: 150px;
+    overflow: auto;
+    text-align: center;
+}
+
+.button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: orange;
+    color: white;
+}
+
+.active {
+    background-color: orange;
+}
+
+.logo {
+
+    width: 100px;
+    height: 100px;
+    display: block;
+
+}
+
+.card {
+    background-color: yellow;
+    color: black;
+    margin: 50px;
+    padding: 1rem;
+    height: 10rem;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: -1rem;
+}
+
+.paris {
+    alt: "no picture to show";
+    width: 930px;
+    height: 500px
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /*shows elements in a column*/
+    .topnav {
+        display: block;
+        width: 60%;
+    }
+
+    .column1 {
+        width: auto;
+    }
+
+    .column2 {
+        float: left;
+        width: auto;
+    }
+
+    .paris {
+        width: 430px;
+    }
+
+    /* makes sure that the a tag will take the entire screen*/
+    .topnav a {
+        display: block;
+        width: 60%;
+    }
+}
+
