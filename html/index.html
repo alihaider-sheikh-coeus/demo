@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
+<h3 class="col-xs-10"> <img src="icons8-star-48.png" title="startup" width="30" height="30"/> Startup</h3>
+<div class="topnav">
+    <a href="#contant" class="active">Join US</a>
+    <a href="#contant">Contact</a>
+    <a href="#block">Services</a>
+    <a href="#contant">Blog</a>
+    <a href="#services">About</a>
+    <a  href="#home">Home</a>
+</div>
+<br>
+<div class="row" style="width: 100%;display: table">
+    <div class="column1" style="background-color: darkorange">
+        <div class="container">
+            <div>
+                <h7 style="color: black;">We are but doing great</h7>
+                <h1 >We give the power back to user</h1>
+                <h4>Content making is noting but offering users value </h4>
+                <h5 style="text-decoration: none">it's not just about traffic minion customers </h5>
+                <button class="button">Explore us</button>
+            </div>
 
-<h2>Text input fields</h2>
+        </div>
+    </div>
+    <div class="column2" >
+        <img src="pic.jpg" class="paris">
+    </div>
+</div>
+<div class="CommentBox">
+    <h3>Services we provide Not just about traffic minion customers</h3>
+</div>
 
-<form action="action.php" method="post" autocomplete="on">
+<div class="cards">
+    <div class="card">
+        <img src="web.png" alt="Avatar" width="50" height="40">
+       <h3> Web Design</h3>
+       <h6>Content marketing is nothing but offering users value</h6>
+        <h5>Let's Talk</h5>
+    </div>
+    <div class="card">
+        <img src="online-shopping.png" alt="Avatar" width="50" height="40">
+        <h3>Web Development</h3>
+        <h6>Content marketing is nothing but offering users value</h6>
+        <h5>Let's Talk</h5>
+    </div>
+    <div class="card">
+        <img src="web.png" alt="Avatar" width="50" height="40">
+        <h3>E-Commerce</h3>
+        <h6>Content marketing is nothing but offering users value</h6>
+        <h5>Let's Talk</h5>
+    </div>
 
-    <fieldset>
-        <legend>Personalia:</legend>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-
-        <label for="birthdaytime">Birthday (date and time):</label>
-        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
-
-        <label for="browser">Select Browser</label><br>
-        <input list="browsers" id="browser" name="browser">
-        <datalist id="browsers">
-            <option value="Internet Explorer">
-            <option value="Firefox">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
-        </datalist><br>
-
-
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile" multiple><br>
-    </fieldset>
-    <input type="submit" value="Submit">
-</form>
-
-<p>Note that the form itself is not visible.</p>
-
-<p>Also note that the default width of text input fields is 20 characters.</p>
-
+</div>
 </body>
 </html>
