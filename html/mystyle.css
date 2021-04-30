@@ -18,45 +18,46 @@
     float: left;
     padding: 0;
 }
+
 .CommentBox {
-    width:1100px;
-    height:30px;
+    width: 1100px;
+    height: 30px;
     background-color: white;
-    color:black;
-    margin:0 auto;
+    color: black;
+    margin: 0 auto;
 }
+
 .column1 {
     float: left;
     width: 49.86%;
     border: 1px solid black;
     height: 500px;
     display: table-cell;
-    /*word-wrap: break-word;*/
     overflow-wrap: break-word;
-    overflow:
-    hidden;
+    overflow: hidden;
 }
-.column2
-{
+
+.column2 {
     float: right;
     width: 49.91%;
     height: 500px;
     display: table-cell;
     border: 1px solid black;
 }
+
 h5 {
     text-decoration: underline;
     text-underline-position: under;
 }
+
 .container {
     width: 95%;
 }
-.container >div
-{
+
+.container > div {
     display: inline-block;
     width: 120%; /* of wrapper width */
     margin-top: 150px;
-
     overflow: auto;
     text-align: center;
 }
@@ -70,7 +71,6 @@ h5 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    /*transition-duration: 0.4s;*/
     cursor: pointer;
 }
 
@@ -81,12 +81,14 @@ h5 {
     opacity: 1;
     transition: 0s
 }
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
@@ -102,7 +104,8 @@ h5 {
     background-color: orange;
     color: white;
 }
-.active{
+
+.active {
     background-color: orange;
 }
 
@@ -128,47 +131,51 @@ h5 {
     display: grid;
     grid-gap: -1rem;
 }
-.paris
-{
-    alt:"no picture to show";
-    width:930px ;
-    height:500px
+
+.paris {
+    alt: "no picture to show";
+    width: 930px;
+    height: 500px
 }
 
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
 @media only screen and (max-width: 600px) {
     /*shows elements in a column*/
-    .topnav{
-        display:block ;
+    .topnav {
+        display: block;
         width: 60%;
     }
-    .column1
-    {
+
+    .column1 {
         width: auto;
     }
-    .column2{
+
+    .column2 {
         float: left;
         width: auto;
     }
-    .paris
-    {
+
+    .paris {
         width: 430px;
     }
-  /* makes sure that the a tag will take the entire screen*/
-    .topnav a{
-        display:block ;
+
+    /* makes sure that the a tag will take the entire screen*/
+    .topnav a {
+        display: block;
         width: 60%;
     }
 }
 
-@media screen {
-
-}
